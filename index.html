@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Nodejit.su WSS</title>
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <h1>Example secure nodejit.su app</h1>
+  <input type="button" id="connect_btn" value="connect" />
+  <script>
+    document.getElementById('connect_btn').onclick = function(){
+      var socket = io.connect('wss://nodejitsu-wss.nodejitsu.com');
+      socket.on('news', function(data) {
+        console.log(data);
+        socket.emit('my other event', { my: 'data'});
+      });
+    };
+  </script>
+</body>
+</html>
