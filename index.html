@@ -10,7 +10,7 @@
   <input type="button" id="connect_btn" value="connect" />
   <script>
     document.getElementById('connect_btn').onclick = function(){
-      var socket = io.connect('wss://nodejitsu-wss.nodejitsu.com');
+      var socket = io.connect('wss://nodejitsu-wss2.nodejitsu.com');
       socket.on('news', function(data) {
         console.log(data);
         socket.emit('my other event', { my: 'data'});

@@ -1,10 +1,10 @@
 {
-  "name": "nodejitsu-wss",
-  "subdomain": "nodejitsu-wss",
+  "name": "nodejitsu-wss2",
+  "subdomain": "nodejitsu-wss2",
   "scripts": {
     "start": "server.js"
   },
-  "version": "0.0.1-1",
+  "version": "0.0.2",
   "engines": {
     "node": "0.6.x"
   },
